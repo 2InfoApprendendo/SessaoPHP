@@ -1,4 +1,6 @@
 <?php
+    require_once 'conn.php';
+    
     if(!isset($_SESSION)) 
         session_start(); // Inicia a sessão
     if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true){
